@@ -1,18 +1,18 @@
 import {combineReducers} from 'redux';
-const songReducers =()=>{
-    return[
-            {title:'do you remember me',id:4},
-            {title:'I hate the way you told me ', id:3},
-            {title:'I do love you', id:2}
-        ]
-    
+
+const songReducers=()=>{
+    return [
+        {title:'Do you remember my name',id:3},
+        {title:'I hate when i miss you',id:4},
+        {title:'I should go home',id:2}
+    ]
 }
-const selectedSongReducers =(state=null,action)=>{
+const selectedSongReducers=(state=null,action)=>{
     switch(action.type){
-        case'SELECT_SONG':return action.payload
-        default :return state
+        case 'SELECT_SONG':return action.payload
+        default:return state
     }
-    
+
 }
 
 export default combineReducers({

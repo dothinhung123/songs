@@ -1,13 +1,14 @@
 import React from 'react';
-import SongList from './SongList';
-import SongDetail from './SongDetails';
-const App =()=>{
+import SongList from './SongList'
+import SongDetails from './SongDetails';
+const App=()=>{
     return(
         <div>
             <SongList></SongList>
-            <SongDetail></SongDetail>
+            <SongDetails></SongDetails>
+
 
         </div>
     )
 }
-export default  App
+export default App
